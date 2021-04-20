@@ -1,0 +1,102 @@
+body {
+  box-sizing: border-box;
+  background-color: whitesmoke;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.navbar {
+  z-index: 100;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.content-header {
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-header h1 {
+  text-transform: uppercase;
+}
+
+.content-header h1::after {
+  content: " highway";
+  font-weight: 300;
+}
+
+.input-group {
+  max-width: 700px;
+  margin-top: 2vw;
+  margin-bottom: 2.5vw;
+  padding: 0 10px;
+}
+
+.btn-custom {
+  border: 3px solid #000;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  padding: 16px 17.5px;
+  color: #000;
+}
+
+.font-header {
+  text-align: center;
+  line-height: 2rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  color: #ffffff;
+  background: #313131;
+  font-size: 13px;
+}
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+textarea:focus, 
+textarea.form-control:focus, 
+input.form-control:focus, 
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=email]:focus, 
+input[type=number]:focus, 
+[type=text].form-control:focus, 
+[type=password].form-control:focus, 
+[type=email].form-control:focus, 
+[type=tel].form-control:focus, 
+[contenteditable].form-control:focus {
+  box-shadow: inset 0 -1px 0 #ddd;
+}
